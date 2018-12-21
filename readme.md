@@ -57,3 +57,40 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+#####################################################################################################################
+############################################           NOTE            ##############################################
+#####################################################################################################################
+
+Sebelum melakukan langkah di bawah, pastikan di komputer/laptop sudah memenuhi beberapa kriteria laravel berikut:
+- PHP >= 7.1.3
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
+
+Kalo kebingungan memenuhinya gimana, download aja XAMPP versi terbaru.
+
+Jika sudah, lakukan langkah langkah berikut (HANYA DILAKUKAN SAAT PERTAMA KALI DENGAN FOLDER PROJECT INI)
+1. Buka xampp akifin mysql sama php nya
+2. Ekstrak file BantuYuk.zip ke directory folder "C:/xampp/htdocs/
+3. Buat database "bantuyuk" di localhost phpmyadmin
+   -> Aktifkan xampp
+   -> Buka cmd
+   -> Ketik "cd C:/xampp/mysql/bin" lalu tekan ENTER
+   -> Ketik "mysql -u root -p" lalu tekan ENTER
+   -> Ketika dimintai password, langsung tekan ENTER
+   -> ketik "create database bantuyuk;" lalu ENTER
+4. Buka cmd ketikan "C:/xampp/htdocs/bantuyuk"
+5. Ketik juga di cmd "php artisan migrate:fresh --seed"
+6. Kalo dah selesai migrasi database, ketik "php artisan serve"
+7. Akses "localhost:8000" di browser
+
+>>>>>>> KALO DAH PERNAH LAKUIN LANGKAH DI ATAS, UNTUK JALANIN WEBSITE NYA LAKUKAN LANGKAH BERIKUT
+1. Buka xampp akifin mysql sama php nya
+2. Buka cmd ketikan "C:/xampp/htdocs/bantuyuk"
+3. Ketik "php artisan serve"
+4. Akses "localhost:8000" di browser
